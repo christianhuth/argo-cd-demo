@@ -1,5 +1,5 @@
 ---
-kube-ops-view:
+promlens:
   ingress:
     enabled: true
     annotations:
