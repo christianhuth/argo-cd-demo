@@ -1,5 +1,11 @@
 ---
 promlens:
+  config:
+    log:
+      level: warn
+    web:
+      defaultPrometheusUrl: https://prometheus.knell.it
+      externalUrl: https://promlens.knell.it
   ingress:
     enabled: true
     annotations:
