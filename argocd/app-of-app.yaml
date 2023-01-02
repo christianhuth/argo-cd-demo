@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd-demo-app-of-app
-  namespace: argocd-demo
+  namespace: argocd
 spec:
   project: argocd-demo
   source:
@@ -12,7 +12,7 @@ spec:
     path: argocd
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd-demo
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
