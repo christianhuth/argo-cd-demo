@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: argocd-demo
+  name: argocd-demo-applicationset
   namespace: argocd
 spec:
   generators:
@@ -26,7 +26,6 @@ spec:
       destination:
         server: https://kubernetes.default.svc
         namespace: argocd-demo
-      revisionHistoryLimit: 0
       syncPolicy:
         automated:
           prune: true
