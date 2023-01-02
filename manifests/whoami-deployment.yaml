@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    argocd.argoproj.io/instance: argocd-demo-app-of-app
+    argocd.argoproj.io/instance: argocd-demo-whoami
   name: whoami
 spec:
   replicas: 1

@@ -5,7 +5,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
   labels:
-    argocd.argoproj.io/instance: argocd-demo-app-of-app
+    argocd.argoproj.io/instance: argocd-demo-whoami
   name: whoami
 spec:
   ingressClassName: nginx
