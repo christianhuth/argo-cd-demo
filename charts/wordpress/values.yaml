@@ -22,4 +22,5 @@ wordpress:
   serviceAccount:
     create: true
   wordpressBlogName: cloud37's Blog!
+  wordpressPassword: p3rf3ctblog
   wordpressUsername: cloud37
