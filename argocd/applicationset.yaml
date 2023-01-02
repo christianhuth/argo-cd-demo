@@ -12,7 +12,7 @@ spec:
         directories:
           - path: charts/*
   template:
-      name: "{{`{{ path.basename }}`}}"
+    name: "{{`{{ path.basename }}`}}"
     spec:
       project: argocd-demo
       source:
