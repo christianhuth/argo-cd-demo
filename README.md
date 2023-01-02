@@ -53,3 +53,11 @@ kubectl apply -f app-of-app.yaml
 14. add a new chart in the Git repository
 
 15. update version of a bundled Helm Chart
+
+16. delete the app-of-app application from the ui
+
+17. show namespace argocd-demo
+
+```bash
+kubectl get all -n argocd-demo
+```
