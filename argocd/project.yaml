@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: argocd-demo
-  namespace: argocd
+  namespace: argocd-demo
 spec:
   description: Project for demonstration of ArgoCD
   sourceRepos:
