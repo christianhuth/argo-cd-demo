@@ -8,17 +8,18 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: whoami.knell.it
-    http:
-      paths:
-      - backend:
-          service:
-            name: whoami
-            port:
-              number: 80
+    - host: whoami.knell.it
+      http:
+        paths:
+          - backend:
+              service:
+                name: whoami
+                name:
+                  number: http
         path: /
-        pathType: ImplementationSpecific
+        pathType: Prefix
   tls:
-  - hosts:
-    - whoami.knell.it
-    secretName: whoami.knell.it-tls
+    - secretName: whoami.knell.it-tls
+      hosts:
+        - whoami.knell.it
+    
