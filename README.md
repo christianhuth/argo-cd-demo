@@ -50,9 +50,11 @@ kubectl apply -f app-of-app.yaml
 
 13. delete a whole application
 
-14. add a new chart in the Git repository
+14. enabled the Promlens chart in the Git repository
 
-15. update version of a bundled Helm Chart
+15. update the Promlens version
+
+16. disabled the Promlens chart again
 
 16. delete the app-of-app application from the ui
 
