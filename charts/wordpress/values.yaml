@@ -1,0 +1,9 @@
+---
+wordpress:
+  wordpressBlogName: cloud37's Blog!
+  wordpressUsername: cloud37
+  service:
+    type: ClusterIP
+  serviceAccount:
+    create: true
+  
