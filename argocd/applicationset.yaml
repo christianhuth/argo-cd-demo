@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: argocd-demo-applicationset
-  namespace: argocd
+  namespace: argocd-demo
 spec:
   generators:
     - git:
