@@ -7,7 +7,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/christianknell/argocd-demo.git
+        repoURL: https://git.knell.it/knellit/knellit-k8s/argocd-demo.git
         revision: main
         directories:
           - path: charts/*
@@ -17,7 +17,7 @@ spec:
     spec:
       project: argocd-demo
       source:
-        repoURL: https://github.com/christianknell/argocd-demo.git
+        repoURL: https://git.knell.it/knellit/knellit-k8s/argocd-demo.git
         targetRevision: main
         path: "{{ path }}"
         helm:

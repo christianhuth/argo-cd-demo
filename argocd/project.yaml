@@ -7,7 +7,7 @@ metadata:
 spec:
   description: Project for demonstration of ArgoCD
   sourceRepos:
-    - "https://github.com/christianknell/argocd-demo.git"
+    - "https://git.knell.it/knellit/knellit-k8s/argocd-demo.git"
   destinations:
     - server: https://kubernetes.default.svc
       namespace: argocd-demo
