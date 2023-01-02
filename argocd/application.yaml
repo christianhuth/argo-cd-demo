@@ -5,7 +5,7 @@ metadata:
   name: argocd-demo-application
   namespace: argocd
 spec:
-  project: demo
+  project: argocd-demo
   source:
     repoURL: https://github.com/christianknell/argocd-demo.git
     targetRevision: main
