@@ -16,8 +16,8 @@ spec:
                 name: whoami
                 name:
                   number: http
-        path: /
-        pathType: Prefix
+            path: /
+            pathType: Prefix
   tls:
     - secretName: whoami.knell.it-tls
       hosts:
