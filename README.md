@@ -39,3 +39,10 @@ https://argocd.knell.it/settings/projects/argocd-demo
 ```bash
 kubectl apply -f app-of-app.yaml
 ```
+11. show applications and applicationset in UI
+
+12. delete a whole application
+
+13. add a new chart in the Git repository
+
+14. update version of a bundled Helm Chart
