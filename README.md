@@ -16,4 +16,8 @@ kubectl get appproject,application -n argocd | grep argocd-demo
 
 4. delete project and application via UI
 
-5. show 
+5. show application and project via kubectl
+
+```bash
+kubectl get appproject,application -n argocd | grep argocd-demo
+```
