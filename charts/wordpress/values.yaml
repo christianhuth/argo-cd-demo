@@ -1,5 +1,12 @@
 ---
 wordpress:
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt
+    hostname: cloud37.knell.it
+    ingressClassName: nginx
+    tls: true
   wordpressBlogName: cloud37's Blog!
   wordpressUsername: cloud37
   service:
