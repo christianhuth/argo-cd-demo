@@ -33,3 +33,9 @@ kubectl apply -f project.yaml
 9. analyze project using UI
 
 https://argocd.knell.it/settings/projects/argocd-demo
+
+10. deploy the app-of-app application
+
+```bash
+kubectl apply -f app-of-app.yaml
+```
