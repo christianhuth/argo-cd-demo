@@ -9,8 +9,9 @@ wordpress:
     tls: true
   wordpressBlogName: cloud37's Blog!
   wordpressUsername: cloud37
+  persistence:
+    enabled: false
   service:
     type: ClusterIP
   serviceAccount:
     create: true
-  
