@@ -2,6 +2,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    argocd.argoproj.io/instance: argocd-demo-app-of-app
   name: whoami
 spec:
   replicas: 1
@@ -14,5 +16,5 @@ spec:
         app: whoami
     spec:
       containers:
-      - name: whoami
-        image: traefik/whoami
+        - name: whoami
+          image: traefik/whoami
