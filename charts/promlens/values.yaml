@@ -20,3 +20,4 @@ promlens:
       - secretName: promlens.knell.it-tls
         hosts:
           - promlens.knell.it
+  revisionHistoryLimit: 0
