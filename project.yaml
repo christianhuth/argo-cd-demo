@@ -1,0 +1,15 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: demo
+  namespace: argocd
+spec:
+  description: Project for demonstration of ArgoCD
+  sourceRepos:
+    - "https://github.com/christianknell/argocd-demo.git"
+  destinations:
+    - server: https://kubernetes.default.svc
+      namespace: demo
+  orphanedResources:
+    warn: false
