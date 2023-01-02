@@ -13,7 +13,7 @@ spec:
           - path: charts/*
   template:
     metadata:
-      name: "{{ path.basename }}"
+      name: "argocd-demo-{{ path.basename }}"
     spec:
       project: argocd-demo
       source:
