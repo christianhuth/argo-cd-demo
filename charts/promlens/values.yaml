@@ -6,11 +6,11 @@ kube-ops-view:
       cert-manager.io/cluster-issuer: letsencrypt
     className: nginx
     hosts:
-      - host: kubeview.knell.it
+      - host: promlens.knell.it
         paths:
           - path: /
             pathType: Prefix
     tls:
-      - secretName: kubeview.knell.it-tls
+      - secretName: promlens.knell.it-tls
         hosts:
-          - kubeview.knell.it
+          - promlens.knell.it

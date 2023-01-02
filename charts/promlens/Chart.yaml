@@ -1,8 +1,8 @@
 ---
 apiVersion: v2
-name: kube-ops-view
+name: promlens
 version: 1.0.0
 dependencies:
-  - name: kube-ops-view
+  - name: promlens
     repository: https://christianknell.github.io/helm-charts
-    version: 1.2.1
+    version: 1.0.1
