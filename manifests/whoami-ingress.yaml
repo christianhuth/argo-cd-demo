@@ -14,8 +14,8 @@ spec:
           - backend:
               service:
                 name: whoami
-                name:
-                  number: http
+                port:
+                  name: http
             path: /
             pathType: Prefix
   tls:
