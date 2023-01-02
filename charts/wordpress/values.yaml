@@ -7,11 +7,16 @@ wordpress:
     hostname: cloud37.knell.it
     ingressClassName: nginx
     tls: true
-  wordpressBlogName: cloud37's Blog!
-  wordpressUsername: cloud37
+  mariadb:
+    auth:
+      database: cloud37-wp
+      password: E6GZyZ2PWScT153uh7CdLRT8I409MrNA
+      username: cloud37
   persistence:
     enabled: false
   service:
     type: ClusterIP
   serviceAccount:
     create: true
+  wordpressBlogName: cloud37's Blog!
+  wordpressUsername: cloud37
