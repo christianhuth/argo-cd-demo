@@ -1,0 +1,31 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: argocd-demo
+  namespace: argocd
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/christianknell/argocd-demo.git
+        revision: main
+        directories:
+          - path: charts/*
+  template:
+      name: "{{`{{ path.basename }}`}}"
+    spec:
+      project: argocd-demo
+      source:
+        repoURL: https://github.com/christianknell/argocd-demo.git
+        targetRevision: main
+        path: "{{`{{ path }}`}}"
+        helm:
+          releaseName: "{{`{{ path.basename }}`}}"
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: argocd-demo
+      revisionHistoryLimit: 0
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
