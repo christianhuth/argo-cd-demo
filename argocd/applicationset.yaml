@@ -13,15 +13,15 @@ spec:
           - path: charts/*
   template:
     metadata:
-      name: "{{`{{ path.basename }}`}}"
+      name: "{{ path.basename }}"
     spec:
       project: argocd-demo
       source:
         repoURL: https://github.com/christianknell/argocd-demo.git
         targetRevision: main
-        path: "{{`{{ path }}`}}"
+        path: "{{ path }}"
         helm:
-          releaseName: "{{`{{ path.basename }}`}}"
+          releaseName: "{{ path.basename }}"
           valueFiles:
             - values.yaml
       destination:
