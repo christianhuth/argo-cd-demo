@@ -1,0 +1,16 @@
+---
+kube-ops-view:
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt
+    className: nginx
+    hosts:
+      - host: kubeview.knell.it
+        paths:
+          - path: /
+            pathType: Prefix
+    tls:
+      - secretName: kubeview.knell.it-tls
+        hosts:
+          - kubeview.knell.it
