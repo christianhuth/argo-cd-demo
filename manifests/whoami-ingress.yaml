@@ -6,6 +6,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt
   name: whoami
 spec:
+  ingressClassName: nginx
   rules:
   - host: whoami.knell.it
     http:
