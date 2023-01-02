@@ -12,6 +12,9 @@ wordpress:
       database: cloud37-wp
       password: E6GZyZ2PWScT153uh7CdLRT8I409MrNA
       username: cloud37
+    primary:
+      persistence:
+        enabled: false
   persistence:
     enabled: false
   service:
