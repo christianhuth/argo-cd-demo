@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: whoami.knell.it
+    - host: argocd-demo.knell.it
       http:
         paths:
           - backend:
@@ -21,7 +21,6 @@ spec:
             path: /
             pathType: Prefix
   tls:
-    - secretName: whoami.knell.it-tls
+    - secretName: argocd-demo.knell.it-tls
       hosts:
-        - whoami.knell.it
-    
+        - argocd-demo.knell.it
