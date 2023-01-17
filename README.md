@@ -1,4 +1,4 @@
-1. create project via UI
+1. create project argocd-demo via UI
 
 2. show namespace argocd-demo
 
