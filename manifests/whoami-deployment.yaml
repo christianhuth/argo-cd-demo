@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/instance: argocd-demo-whoami
   name: whoami
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: whoami
