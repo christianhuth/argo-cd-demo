@@ -3,11 +3,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: argocd-demo-applicationset
-  namespace: argocd
+  namespace: argo
 spec:
   generators:
     - git:
-        repoURL: https://git.knell.it/knellit/knellit-k8s/argocd-demo.git
+        repoURL: https://github.com/christianhuth/argo-cd-demo.git
         revision: main
         directories:
           - path: charts/*
@@ -17,7 +17,7 @@ spec:
     spec:
       project: argocd-demo
       source:
-        repoURL: https://git.knell.it/knellit/knellit-k8s/argocd-demo.git
+        repoURL: https://github.com/christianhuth/argo-cd-demo.git
         targetRevision: main
         path: "{{ path }}"
         helm:
@@ -26,7 +26,7 @@ spec:
             - values.yaml
       destination:
         server: https://kubernetes.default.svc
-        namespace: argocd-demo
+        namespace: argo
       syncPolicy:
         automated:
           prune: true
