@@ -12,7 +12,7 @@ spec:
     path: manifests
   destination:
     server: https://kubernetes.default.svc
-    namespace: argo
+    namespace: argocd-demo
   syncPolicy:
     automated:
       prune: true
