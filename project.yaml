@@ -3,16 +3,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: argocd-demo
-  namespace: argocd
+  namespace: argo
 spec:
   description: Project for demonstration of ArgoCD
   sourceRepos:
-    - "https://git.knell.it/knellit/knellit-k8s/argocd-demo.git"
+    - https://github.com/christianhuth/argo-cd-demo.git
   destinations:
     - server: https://kubernetes.default.svc
       namespace: argocd-demo
     - server: https://kubernetes.default.svc
-      namespace: argocd
+      namespace: argo
   clusterResourceWhitelist:
     - group: rbac.authorization.k8s.io
       kind: ClusterRoleBinding
