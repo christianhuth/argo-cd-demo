@@ -3,16 +3,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd-demo-whoami
-  namespace: argocd
+  namespace: argo
 spec:
-  project: argocd-demo
+  project: argo
   source:
     repoURL: https://github.com/christianhuth/argo-cd-demo.git
     targetRevision: main
     path: manifests
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd-demo
+    namespace: argo
   syncPolicy:
     automated:
       prune: true
